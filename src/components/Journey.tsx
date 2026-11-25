@@ -52,7 +52,7 @@ export default function Journey() {
     <section className="journey" id="method" ref={root}>
       <div className="journey__track">
         <div className="journey__intro">
-          <span className="eyebrow" style={{ color: "var(--gold-l)" }}>(02) The Ekveera Method</span>
+          <span className="eyebrow" style={{ color: "var(--gold)" }}>(02) The Ekveera Method</span>
           <h2 className="display">
             Four phases.<br /><em className="gold-text">One</em> standard.
           </h2>

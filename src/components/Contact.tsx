@@ -42,7 +42,7 @@ export default function Contact() {
       <section className="contact" id="contact">
         <div className="contact__glow" />
         <div className="contact__head">
-          <span className="eyebrow" style={{ color: "var(--gold-l)" }}>(06) Begin a project</span>
+          <span className="eyebrow" style={{ color: "var(--gold)" }}>(06) Begin a project</span>
           <h2 className="display" style={{ marginTop: 28 }}>
             <span className="line-mask"><span>Build with</span></span>
             <span className="line-mask"><span><em className="gold-text">confidence.</em></span></span>
