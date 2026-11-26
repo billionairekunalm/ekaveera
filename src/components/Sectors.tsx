@@ -39,7 +39,6 @@ export default function Sectors() {
       </div>
       {SECTORS.map((s, i) => (
         <article className="sector" key={s.title}>
-          <img src={s.img} alt={`${s.title} construction by Ekveera`} loading="lazy" />
           <div className="sector__body">
             <div className="sector__top"><span>0{i + 1} / 0{SECTORS.length}</span><span>Ekveera Infra</span></div>
             <div>
@@ -47,6 +46,7 @@ export default function Sectors() {
               <p className="sector__text">{s.text}</p>
             </div>
           </div>
+          <div className="sector__media"><img src={s.img} alt={`${s.title} construction by Ekveera`} loading="lazy" /></div>
           <div className="sector__shade" />
         </article>
       ))}

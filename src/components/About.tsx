@@ -32,6 +32,7 @@ export default function About() {
       });
       ft.to(".frame__media", { clipPath: "inset(0% 0% 0% 0% round 0px)", ease: "none" })
         .to(".frame__media img", { scale: 1, ease: "none" }, 0)
+        .from(".frame__card", { opacity: 0, y: 50, duration: 0.35 }, 0.38)
         .from(".frame__copy .line-mask > span", { yPercent: 110, stagger: 0.1, ease: "power2.out", duration: 0.4 }, 0.45)
         .from(".frame__copy p", { opacity: 0, duration: 0.3 }, 0.6)
         .to(".frame__side--l", { xPercent: -60, opacity: 0, ease: "none", duration: 0.4 }, 0)
@@ -88,7 +89,7 @@ export default function About() {
           <img src="/images/tower-dusk.webp" alt="A completed residential tower at dusk" />
         </div>
         <div className="frame__copy">
-          <div>
+          <div className="frame__card">
             <h2 className="display">
               <span className="line-mask"><span>From groundwork</span></span>
               <span className="line-mask"><span>to <em className="gold-text">final handover</em></span></span>

@@ -16,6 +16,7 @@ export default function Hero() {
       onReady(() => {
         gsap.timeline()
           .to(".hero__img", { scale: 1.08, duration: 2.8, ease: "expo.out" })
+          .to(".hero__img", { scale: 1.16, xPercent: -2, duration: 24, ease: "sine.inOut", repeat: -1, yoyo: true })
           .to(".hero__title .line-mask > span", { yPercent: 0, duration: 1.6, stagger: 0.12, ease: "expo.out" }, 0.6)
           .to(".hero__meta > *, .hero__top > *", { opacity: 1, y: 0, duration: 1.2, stagger: 0.08, ease: "power3.out" }, 1.1);
       });
@@ -42,7 +43,7 @@ export default function Hero() {
           <span className="line-mask row-2"><span><em className="gold-text">every</em> structure</span></span>
         </h1>
         <div className="hero__meta">
-          <span>Residential <strong>/</strong> Commercial <strong>/</strong> Turnkey</span>
+          <span>Residential <strong>✦</strong> Commercial <strong>✦</strong> Turnkey</span>
           <span>From groundwork to final handover</span>
         </div>
       </div>
